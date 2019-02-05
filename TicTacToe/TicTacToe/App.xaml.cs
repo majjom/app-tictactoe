@@ -15,7 +15,7 @@ namespace TicTacToe
 		{
 			InitializeComponent();
 
-            AppCenter.Start(typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("android=9ab02d97-aa83-4a73-aeac-b9b69c58b723;" + "uwp={Your UWP App secret here};" + "ios={Your iOS App secret here}", typeof(Analytics), typeof(Crashes));
 
             MainPage = new NavigationPage(new HomePage())
             {

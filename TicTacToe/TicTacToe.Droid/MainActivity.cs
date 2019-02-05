@@ -10,6 +10,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Acr.UserDialogs;
 using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace TicTacToe.Droid
 {
@@ -28,7 +30,7 @@ namespace TicTacToe.Droid
             base.OnCreate (bundle);
 
 			Forms.Init (this, bundle);
-            AppCenter.Configure("4e3c9310-9aec-4414-b0f6-0557e326cada");
+            AppCenter.Start("9ab02d97-aa83-4a73-aeac-b9b69c58b723", typeof(Analytics), typeof(Crashes));
             LoadApplication (new App ());
 
             UserDialogs.Init(this);
