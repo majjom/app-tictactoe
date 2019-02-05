@@ -1,9 +1,9 @@
-﻿using TicTacToe.View;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using TicTacToe.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Microsoft.Azure.Mobile;
-using Microsoft.Azure.Mobile.Analytics;
-using Microsoft.Azure.Mobile.Crashes;
 
 [assembly:XamlCompilation(XamlCompilationOptions.Compile)]
 
@@ -15,7 +15,7 @@ namespace TicTacToe
 		{
 			InitializeComponent();
 
-            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
+            AppCenter.Start(typeof(Analytics), typeof(Crashes));
 
             MainPage = new NavigationPage(new HomePage())
             {

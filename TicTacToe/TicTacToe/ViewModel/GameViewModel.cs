@@ -1,9 +1,9 @@
 ﻿using Acr.UserDialogs;
-using Microsoft.Azure.Mobile.Analytics;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace TicTacToe
