@@ -75,6 +75,11 @@ namespace TicTacToe
                 return;
             }
 
+            if (Settings.Player1.ToLower() == "exception")
+            {
+                throw new ApplicationException("Player01 exception");
+            }
+
             await Page.Navigation.PushAsync(new GamePage());
         }
 
