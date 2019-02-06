@@ -17,7 +17,7 @@ namespace TicTacToe
         public GameViewModel(Page page) :base(page)
         {
             CurrentGame = new string[3, 3];
-            CurrentStatus = $"{Settings.Player1} is up.";
+            CurrentStatus = $"{Settings.Player1} is on move.";
         }
 
         string currentStatus;
